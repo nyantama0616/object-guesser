@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    ports:
+      - 34021:8000
+    volumes:
+      - .:/app
+    command: python3 main.py
